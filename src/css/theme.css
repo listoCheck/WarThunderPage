@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    left: 0;
+    z-index: 10;
+    top: 0;
+    background-color: #020c15;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    img{
+        width: 13%;
+    }
+}
+.background-video video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 101vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20%;
+
+}
+
+.selecter {
+    margin: 0;
+    padding: 0;
+}
