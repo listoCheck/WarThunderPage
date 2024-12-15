@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import '../css/music.css';
 
 import track1 from '../music/Bandit at 6 Oclock.mp3';
@@ -8,22 +8,27 @@ import track3 from '../music/Nigelcore.mp3';
 
 export function MusicPlayer() {
     const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
-    const [volume, setVolume] = useState(1);
-    const [isPlaying, setIsPlaying] = useState(false);
+    const [volume, setVolume] = useState(0.2);
+    let [isPlaying, setIsPlaying] = useState(false);
     const audioRef = useRef(null);
 
     const tracks = [
-        { title: 'Bandit at 6 Oclock', src: track1 },
-        { title: 'Main Theme', src: track2 },
-        { title: 'Nigelcore', src: track3 },
+        {title: 'Bandit at 6 Oclock', src: track1},
+        {title: 'Main Theme', src: track2},
+        {title: 'Nigelcore', src: track3},
 
     ];
+    useEffect(() => {
+        setIsPlaying(true);
 
+        togglePlay()
+    }, []);
     const togglePlay = () => {
         if (isPlaying) {
             audioRef.current.pause();
         } else {
             audioRef.current.play();
+            audioRef.current.volume = 0.4;
         }
         setIsPlaying(!isPlaying);
     };
@@ -71,7 +76,7 @@ export function MusicPlayer() {
                 <input
                     type="range"
                     min="0"
-                    max="100"
+                    max="50"
                     value={volume * 100}
                     onChange={handleVolumeChange}
                 />

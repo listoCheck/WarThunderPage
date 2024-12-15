@@ -1,3 +1,4 @@
+
 html, body {
     margin: 0;
     padding: 0;
@@ -41,4 +42,32 @@ header {
 .selecter {
     margin: 0;
     padding: 0;
+}
+button {
+    width: 223px;
+    height: 112px;
+
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    border-color: #007BFF;
+    filter: brightness(1.2);
+}
+
+button:active {
+    border-color: #FF4500;
+    filter: brightness(0.8);
+}
+#t80{
+    background-image: url('../images/т80.jpg');
+}
+#ka50{
+    background-image: url('../images/ка50.jpg');
+}
+#su39{
+    background-image: url('../images/су39.jpg');
 }
