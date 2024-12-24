@@ -1,15 +1,9 @@
-import logo from "./images/вбой.jpg";
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
-      </header>
-    </div>
-  );
+    return (
+        <h2>dada</h2>
+    );
 }
 
 export default App;

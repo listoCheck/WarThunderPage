@@ -36,32 +36,27 @@ header {
     text-align: center;
     font-family: Arial, sans-serif;
     margin-top: 20%;
+    button {
+        width: 223px;
+        height: 112px;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
 
+    button:hover {
+        border-color: #007BFF;
+        filter: brightness(1.2);
+    }
 }
 
 .selecter {
     margin: 0;
     padding: 0;
 }
-button {
-    width: 223px;
-    height: 112px;
 
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
 
-button:hover {
-    border-color: #007BFF;
-    filter: brightness(1.2);
-}
-
-button:active {
-    border-color: #FF4500;
-    filter: brightness(0.8);
-}
 #t80{
     background-image: url('../images/т80.jpg');
 }
@@ -70,4 +65,49 @@ button:active {
 }
 #su39{
     background-image: url('../images/су39.jpg');
+}
+#go-next{
+    width: 297px;
+    height: 80px;
+    background-image: url('../images/вбой.jpg');
+    align-items: center;
+}
+.info-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.info-content {
+    background-color: #020c15;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%;
+    color: rgba(219, 200, 200, 0.94);
+}
+
+.close-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.close-btn:hover {
+    background-color: #0056b3;
+    color: #FF4500;
 }
