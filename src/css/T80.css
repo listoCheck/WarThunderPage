@@ -1,0 +1,41 @@
+
+.t80-container {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/view2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.t80-container.new-background {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/scope1t.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#scope{
+    background-image: url('../images/т80прицел1.jpg');
+    width: 30%;
+    height: 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    transform: translate(240%, 60%) rotate(3deg);
+    transform-origin: center;
+    opacity: 0;
+}
+#exit-button{
+    background-color: #020c15;
+    color: #FF4500;
+}

@@ -111,3 +111,7 @@ header {
     background-color: #0056b3;
     color: #FF4500;
 }
+#prevPhoto{
+    width: 100%;
+    height: 70%;
+}
